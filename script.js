@@ -50,7 +50,13 @@ window.onscroll = function(){
 }
 
 
-
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 5) {
+      $('.scroll-down').addClass('hidden');
+    } else {
+      $('.scroll-down').removeClass('hidden');
+    }
+  });
 
 
 
